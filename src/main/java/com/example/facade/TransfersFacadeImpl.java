@@ -63,6 +63,8 @@ public class TransfersFacadeImpl implements TransfersFacade {
 		 */
 		activityDaoImpl.insertNewActivity(transfer.getDate(), "TRANSFER FEE", transfer.getFromAccount(),
 				-InsecureBankUtils.round(transfer.getFee(), 2), InsecureBankUtils.round(amountWithFees, 2));
+		activityDaoImpl.insertNewActivity(transfer.getDate(), "TRANSFER FEE", transfer.getFromAccount(),
+				-InsecureBankUtils.round(transfer.getFee(), 2), InsecureBankUtils.round(amountWithFees, 2));
 
 		int toCashAccountId = cashAccountDao.getIdFromNumber(transfer.getToAccount());
 		if (toCashAccountId <= 0) {
