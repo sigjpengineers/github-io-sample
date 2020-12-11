@@ -20,6 +20,7 @@ public class AuthenticationController {
 	@RequestMapping("/403")
 	public String error403(final Model model) {
 		System.out.println(username);
+		System.out.println(username);
 		return "error403";
 	}
 }
