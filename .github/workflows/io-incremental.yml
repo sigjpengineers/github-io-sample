@@ -47,7 +47,7 @@ jobs:
         ioServerToken: ${{secrets.IO_SERVER_TOKEN}}
         workflowServerUrl: ${{secrets.WORKFLOW_SERVER_URL}}
         workflowServerToken: ${{secrets.WORKFLOW_SERVER_TOKEN}}
-        #ioManifestUrl: "hellow..ywwie..ew"
+        ioManifestUrl: "hellow..ywwie..ew"
         additionalWorkflowArgs: "--persona=developer"
         stage: "IO"
           
