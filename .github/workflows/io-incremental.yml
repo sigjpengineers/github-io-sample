@@ -41,7 +41,7 @@ jobs:
 
     - name: Synopsys Intelligent Security Scan
       id: prescription
-      uses: synopsys-sig/intelligent-security-scan@2552806
+      uses: synopsys-sig/intelligent-security-scan@2a7d493
       with:
         ioServerUrl: ${{secrets.IO_SERVER_URL}}
         ioServerToken: ${{secrets.IO_SERVER_TOKEN}}
