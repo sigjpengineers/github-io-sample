@@ -39,7 +39,7 @@ jobs:
     #      --detect.tools="SIGNATURE_SCAN,DETECTOR" \
     #      --detect.binary.scan.file.path=./insecure-bank.war
 
-    - name: Synopsys Intelligent Security Scan
+    - name: Synopsys Intelligent Security Scannn
       id: prescription
       uses: synopsys-sig/intelligent-security-scan@3d2e2ec
       with:
