@@ -32,7 +32,7 @@ jobs:
 
     - name: Synopsys Intelligent Security Scan
       id: prescription
-      uses: synopsys-sig/intelligent-security-scan@c2c5c67
+      uses: synopsys-sig/intelligent-security-scan@26a9e0c
       with:
         ioServerUrl: ${{secrets.IO_SERVER_URL1}}
         ioServerToken: ${{secrets.IO_SERVER_TOKEN1}}
@@ -40,7 +40,12 @@ jobs:
         workflowServerToken: ${{secrets.WORKFLOW_SERVER_TOKEN1}}
         additionalWorkflowArgs: "--persona=developer --release.type=major --polaris.url=${{secrets.POLARIS_SERVER_URL}} --polaris.token=${{secrets.POLARIS_ACCESS_TOKEN}} --sensitive.package.pattern=com.synopsys.app --jira.project.name=aaaa --jira.assignee=aaaa --jira.api.url=aaaa --jira.issues.query=aaaa --jira.username=aaaa --jira.auth.token=aaaa"
         stage: "IO"
-          
+    
+    - name: Print Prescription
+      run: |      
+          echo ${{steps.prescription.outputs.sastScan}}
+          echo ${{steps.prescription.outputs.scaScan}}
+    
     # Please note that the ID in previous step was set to prescription
     # in order for this logic to work also make sure that POLARIS_ACCESS_TOKEN
     # is defined in settings
@@ -77,7 +82,7 @@ jobs:
   
     - name: Synopsys Intelligent Security Scan
       if: ${{ steps.prescription.outputs.sastScan == 'true' || steps.prescription.outputs.scaScan == 'true' }}
-      uses: synopsys-sig/intelligent-security-scan@c2c5c67
+      uses: synopsys-sig/intelligent-security-scan@26a9e0c
       with:
         ioServerUrl: ${{secrets.IO_SERVER_URL1}}
         ioServerToken: ${{secrets.IO_SERVER_TOKEN1}}
