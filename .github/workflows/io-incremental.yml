@@ -41,12 +41,13 @@ jobs:
 
     - name: Synopsys Intelligent Security Scan
       id: prescription
-      uses: synopsys-sig/intelligent-security-scan@2a7d493
+      uses: synopsys-sig/intelligent-security-scan@ee67e7f
       with:
         ioServerUrl: ${{secrets.IO_SERVER_URL}}
         ioServerToken: ${{secrets.IO_SERVER_TOKEN}}
         workflowServerUrl: ${{secrets.WORKFLOW_SERVER_URL}}
         workflowServerToken: ${{secrets.WORKFLOW_SERVER_TOKEN}}
+        ioManifestUrl: "hellow..ywwie..ew"
         additionalWorkflowArgs: "--persona=developer"
         stage: "IO"
           
