@@ -3,11 +3,11 @@ install:
   coverity:
     version: latest
 project:
-  name: "sig-devsecops/github-io-sample"
+  name: "sigjpengineers/github-io-sample"
   branch: "origin/master"
   revision:
-    name: "sig-devsecops/github-io-sample"
-    date: "2020-10-01T14:25:30Z"
+    name: "sigjpengineers/github-io-sample"
+    date: "2021-01-05T16:11:00Z"
   captureDir: .synopsys/polaris
 capture:
   coverity:
