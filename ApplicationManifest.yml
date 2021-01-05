@@ -16,7 +16,7 @@ application:
   release: major
 environment:
   scm: github
-  scmOwner: devsecops-test
+  scmOwner: sigjpengineers
   scmRepositoryName: github-io-sample
   scmBranchName: feature
   githubApiUrl: https://api.github.com/repos/
