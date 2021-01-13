@@ -13,7 +13,7 @@ application:
   sourceFilePattern: .*\+\+\+.*(\.java|\.jsp)+.*
   sensitivePackagePattern: .*(\+\+\+.*(com\/example\/app)).*
   fileChangeThreshold: 10
-  release: major
+  release: minor
 environment:
   scm: github
   scmOwner: sigjpengineers
