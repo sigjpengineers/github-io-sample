@@ -18,7 +18,7 @@ environment:
   scm: github
   scmOwner: sigjpengineers
   scmRepositoryName: github-io-sample
-  scmBranchName: feature
+  scmBranchName: development
   githubApiUrl: https://api.github.com/repos/
   jiraProjectName: <<JIRA_PROJECT_NAME>>
   jiraIssuesQuery: <<JIRA_ISSUES_QUERY>>
