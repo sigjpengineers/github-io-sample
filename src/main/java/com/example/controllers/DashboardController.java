@@ -200,7 +200,6 @@ public class DashboardController {
 				}
 			}
 			catch (IOException e) {
-				System.out.println("Error in close");
 			}
 		}
 
